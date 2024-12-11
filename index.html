@@ -20,7 +20,7 @@
                     </ul>
                 </nav>
                 <button>Se connecter</button>
-                <button id="dark-mode-toggle">Mode Sombre</button>
+                <button id="dark-mode-toggle">🌙 </button>
             </div>
         </section>
     </header>
@@ -93,26 +93,31 @@
         
         <section id="contact" class="form-container">
             <h2>Inscription à notre Newsletter</h2>
-            <form action="#" method="post">
+            <form id="contactForm" action="#" method="post">
                 <div class="form-group">
                     <label for="nom">Nom :</label>
                     <input type="text" id="nom" name="nom" required>
+                    <span id="nomError" class="error-message"></span>
                 </div>
                 <div class="form-group">
                     <label for="prenom">Prénom :</label>
                     <input type="text" id="prenom" name="prenom" required>
+                    <span id="prenomError" class="error-message"></span>
                 </div>
                 <div class="form-group">
                     <label for="email">Email :</label>
                     <input type="email" id="email" name="email" required>
+                    <span id="emailError" class="error-message"></span>
                 </div>
                 <div class="form-group">
                     <label for="telephone">Numéro de téléphone :</label>
                     <input type="tel" id="telephone" name="telephone" pattern="[0-9]{10}" required>
+                    <span id="telephoneError" class="error-message"></span>
                 </div>
                 <button type="submit">S'inscrire</button>
             </form>
         </section>
+        
     </main>
 
     <footer>

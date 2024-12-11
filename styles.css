@@ -1,4 +1,4 @@
-/* Mode clair par défaut (appliqué à tous les éléments) */
+/* Mode clair par défaut */
 
 /* Corps de la page */
 body {
@@ -26,8 +26,59 @@ header {
 
 /* Formulaire de contact */
 .form-container {
+    padding: 20px;
     background-color: #4a4e69;
     color: #fff;
+    text-align: center;
+}
+
+.form-container form {
+    max-width: 500px;
+    margin: auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #9a8c98;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button[type="submit"]:hover {
+    background-color: #f2e9e4;
+}
+
+/* Message d'erreur */
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    display: none;
+}
+
+/* Style pour les champs invalides */
+input:invalid {
+    border-color: red;
 }
 
 /* Footer */
