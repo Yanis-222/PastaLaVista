@@ -1,0 +1,260 @@
+/* Styles globaux */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+
+body {
+    background-color: #eae6d7; 
+    color: #3c3c3c;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #c45850; 
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+button {
+    background-color: #038eff; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #0051ff; 
+}
+.top-bar {
+    display: flex;
+    position: relative; 
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.top-bar .logo {
+    width: 120px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.navigation {
+    position: absolute; 
+    right: -160px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    display: flex;
+    align-items: center;
+    background-color: #5ca04b;
+    padding: 61px;
+}
+
+.navigation ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.navigation li {
+    margin: 0 15px;
+}
+
+.navigation a {
+    color: #3c3c3c;
+    font-size: 18px;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+
+.navigation button {
+    margin-left: auto; 
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+/* Section TitreTexte */
+.TitreTexte {
+    background-color: #f5f0f1; 
+    color: #c53131;
+    text-align: center;
+    padding: 50px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.TitreTexte h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.highlight {
+    color: #5ca04b; 
+}
+
+.TitreTexte .content {
+    margin-top: 30px;
+}
+
+/* Section présentation */
+.presentation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.presentation-content {
+    width: 48%;
+}
+
+.presentation img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Spécialités */
+#specialites {
+    background-color: #ffffff; 
+    padding: 50px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#specialites h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #3c3c3c;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.box {
+    width: 30%;
+    background-color: #f9f4e1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.box img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.box h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.box ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.box ul li {
+    margin-bottom: 10px;
+}
+
+/* Galerie d'images */
+#images {
+    background-color: #f1f0f0;
+    padding: 50px 20px;
+}
+
+#images h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #3c3c3c;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Formulaire */
+.form-container {
+    background-color: #faecd1; 
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.form-container h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #3c3c3c;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 18px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+    width: 50%;
+    margin-top: 20px;
+    font-size: 18px;
+    background-color: #008cff; 
+}
+
+button[type="submit"]:hover {
+    background-color: #006eff;
+}
+
+/* Footer */
+footer {
+    background-color: #b7a59a; 
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px;
+}
+
+
+/* j'ai pas encore fait le responsive my bad !! */

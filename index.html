@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasta La Vista</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <section class="top-bar">
+            <img src="images/pizza.jpg" alt="logo pizzeria" class="logo">
+            <div class="navigation">
+                <nav>
+                    <ul>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#specialites">Nos Spécialités</a></li>
+                        <li><a href="#images">Galerie</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <button>Se connecter</button>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="TitreTexte" id="accueil">
+            <h1>Bienvenue chez <span class="highlight">Pasta La Vista</span></h1>
+            <div class="content">
+                <section class="presentation">
+                    <h2>Le goût authentique de l'Italie, juste à votre porte !</h2>
+                    <div class="presentation-content">
+                        <p>Chez <span class="highlight">Pasta La Vista</span>, chaque plat est une célébration de la cuisine italienne, préparée avec soin et passion. Que vous soyez amateur de pizzas classiques ou de spécialités régionales, nous avons de quoi ravir vos papilles.</p>
+                        <img src="https://ffcuisine.fr/wp-content/uploads/2024/09/1725751241_recette-de-pizza-royale-facile-et-delicieuse-cuisine-italienne-1-768x434.jpg" alt="Pizza royale">
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <section id="specialites">
+            <h2>Nos spécialités Italiennes :</h2>
+            <div class="container">
+                <div class="box">
+                    <img src="https://ffcuisine.fr/wp-content/uploads/2024/03/1711111906_recette-de-pizza-vegetarienne-facile-et-savoureuse-768x430.jpg" alt="Pizza végétarienne">
+                    <h4>Nos Pizzas :</h4>
+                    <ul>
+                        <li>~Margherita classique</li>
+                        <li>~Savoyarde</li>
+                        <li>~Reines</li>
+                        <li>~Chèvre miel</li>
+                        <li>~Royal</li>
+                        <li>~Napolitaine</li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <img src="https://commedesfrancais.com/uploads/images/global/main_pictures/62cd4044b8e95629444607.jpg" alt="Salades">
+                    <h4>Nos Salades :</h4>
+                    <ul>
+                        <li>~Crudités à la caprese</li>
+                        <li>~Salade toscane</li>
+                        <li>~Salade Caprese tomate mozzarella</li>
+                        <li>~Salade César</li>
+                        <li>~Salade de Fusilli à l'italienne</li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <img src="https://mongraindesucre.com/wp-content/uploads/2024/02/1707783679_tiramisu-authentique-percer-les-secrets-de-ce-dessert-italien-intemporel-1.jpg" alt="Tiramisu">
+                    <h4>Nos Desserts :</h4>
+                    <ul>
+                        <li>~Tiramisu authentique</li>
+                        <li>~Ciambellone</li>
+                        <li>~Panciale</li>
+                        <li>~Panna cotta</li>
+                        <li>~Café italien</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="images">
+            <h2>En images :</h2>
+            <div class="image-grid">
+                <img src="https://www.cuisineaddict.com/blog/wp-content/uploads/2020/06/Pizza-italienne-720x456.jpg" alt="Pizza italienne">
+                <img src="https://www.macuisinesante.com/wp-content/uploads/2015/02/salade_italienne_simple_DG.jpg" alt="Salade italienne">
+                <img src="https://m1.zeste.ca/serdy-m-dia-inc/image/upload/f_auto/fl_lossy/q_auto:eco/x_0,y_188,w_5882,h_3309,c_crop/w_836,h_470,c_scale/v1625507459/foodlavie/prod/articles/top-recettes-de-desserts-italiens-qui-nous-font-craquer-c3374c32" alt="Desserts italiens">
+                <img src="https://i.notrefamille.com/1400x787/smart/2020/09/24/44198-large.jpg" alt="Pizza gourmet">
+                <img src="https://www.demotivateur.fr/cdn-cgi/image/fit=scale-down,width=2560,quality=50/https://www.demotivateur.fr/images-buzz/cover/16613794406603f2c15b11d_Design-sans-titre-3-.jpg" alt="Pizza avec ingrédients frais">
+                <img src="https://www.demotivateur.fr/images-buzz/shutterstock_1359949274_2.jpg" alt="Pizza artisanale">
+            </div>
+        </section>
+        
+        <section id="contact" class="form-container">
+            <h2>Inscription à notre Newsletter</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" required>
+                </div>
+                <div class="form-group">
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" id="prenom" name="prenom" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="telephone">Numéro de téléphone :</label>
+                    <input type="tel" id="telephone" name="telephone" pattern="[0-9]{10}" required>
+                </div>
+                <button type="submit">S'inscrire</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <section class="footer-content">
+            <p>&copy; 2024 Pasta La Vista - Tous droits réservés</p>
+            <p>Adresse: 123 Rue de l'Italie, Paris</p>
+            <p>Email: contact@pastalavista.com | Téléphone: +33 1 23 45 67 89</p>
+        </section>
+    </footer>
+</body>
+</html>
